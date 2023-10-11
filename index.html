@@ -8,16 +8,22 @@
     <title>Tempurature Converter</title>
 </head>
 <body>
-    <p>
-        <label>Celsius</label>
-        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter1(this.value)" onchange="temperatureConverter1(this.value)">
-      </p>
-      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
-      <p>
-        <label>Fahrenheit</label>
-        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
-      </p>
-      <p>Celcius: <span id="outputCelcius"></span></p>
-<script src="script.js"></script>    
+  <div>
+    <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between temperature 
+    measurements:</p>
+    <div>
+      <label>Fahrenheit</label>
+      <input id="inputFahrenheit"type="number" min="-459.66999999999996" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+    </div>
+    <div>
+      <label>Celsius</label>
+      <input id="inputCelsius"type="number" min="-273.15" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+    </div>
+    <div>
+      <label>Kelvin</label>
+      <input id="inputKelvin"type="number" min="0" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
