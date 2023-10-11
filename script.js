@@ -1,8 +1,8 @@
-function run() {
-    var x , y , z , f;
-    x = document.getElementById("input").value;
-    y = 1.8;
-    z = 32;
-    f = x * y + z;
-    document.getElementById("output").innerHTML = f;
-}
+function temperatureConverter1(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+  }
+  function temperatureConverter2(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+  }

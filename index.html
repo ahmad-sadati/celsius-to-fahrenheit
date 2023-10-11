@@ -8,11 +8,16 @@
     <title>Tempurature Converter</title>
 </head>
 <body>
-    <div class="input-group">
-        <span class="input-group-text">Celsius to Fahrenheit</span>
-        <input type="number" aria-label="Celsius" class="form-control" id="input" placeholder="Celsius" onchange="run()"/>
-        <output type="number" aria-label="Fahrenheit" class="form-control" id="output" placeholder="Fahrenheit"></output>
-      </div>
-      <script src="script.js"></script>
+    <p>
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter1(this.value)" onchange="temperatureConverter1(this.value)">
+      </p>
+      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+      <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
+      </p>
+      <p>Celcius: <span id="outputCelcius"></span></p>
+<script src="script.js"></script>    
 </body>
 </html>
