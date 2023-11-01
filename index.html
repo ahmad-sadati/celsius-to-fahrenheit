@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Tempurature Converter</title>
 </head>
-<body>
+<body class="container">
   <div>
-    <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between temperature 
+    <p class="text-center" style="margin-left:8px;margin-bottom:4px;">Type a value in any of the fields to convert between temperature 
     measurements:</p>
-    <div>
-      <label>Fahrenheit</label>
+    <div class="text-center">
+      <label>Fahrenheit</label><br>
       <input id="inputFahrenheit"type="number" min="-459.66999999999996" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
     </div>
-    <div>
-      <label>Celsius</label>
+    <div class="text-center">
+      <label>Celsius</label><br>
       <input id="inputCelsius"type="number" min="-273.15" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
     </div>
-    <div>
-      <label>Kelvin</label>
+    <div class="text-center">
+      <label>Kelvin</label><br>
       <input id="inputKelvin"type="number" min="0" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
     </div>
   </div>
